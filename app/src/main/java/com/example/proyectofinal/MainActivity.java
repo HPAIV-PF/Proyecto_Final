@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new LightFragment()).commit();
                 break;
             case R.id.nav_grav:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new GravityFragment()).commit();
                 break;
         }
         drawer.closeDrawer(GravityCompat.START);
