@@ -3,27 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
+    <item android:title="INFORMACION">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_presentation"
+                    android:icon="@drawable/ic_profile"
+                    android:title="PRESENTACION" />
+                <item android:id="@+id/nav_entorno"
+                    android:icon="@drawable/ic_entorno"
+                    android:title="SENSORES DE ENTORNO" />
+                <item android:id="@+id/nav_posicion"
+                    android:icon="@drawable/ic_position"
+                    android:title="SENSORES DE POSICION" />
+                <item android:id="@+id/nav_movimiento"
+                    android:icon="@drawable/ic_move"
+                    android:title="SENSORES DE MOVIMIENTO" />
+            </group>
+        </menu>
+    </item>
 
-    <group android:checkableBehavior="single">
-        <item android:id="@+id/nav_message"
-            android:icon="@drawable/ic_message"
-            android:title="Message" />
-        <item android:id="@+id/nav_chat"
-            android:icon="@drawable/ic_chat"
-            android:title="Chat" />
-        <item android:id="@+id/nav_profile"
-            android:icon="@drawable/ic_profile"
-            android:title="Profile" />
-    </group>
 
-    <item android:title="Communicate">
+    <item android:title="PROBAR SENSORES">
         <menu>
             <item android:id="@+id/nav_share"
-                android:icon="@drawable/ic_share"
-                android:title="Share" />
+                android:icon="@drawable/ic_luz"
+                android:title="SENSOR DE LUZ" />
             <item android:id="@+id/nav_send"
-                android:icon="@drawable/ic_send"
-                android:title="Send" />
+                android:icon="@drawable/ic_grav"
+                android:title="SENSOR DE GRAVEDAD" />
         </menu>
     </item>
 

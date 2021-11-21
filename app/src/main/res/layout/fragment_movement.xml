@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+            <TextView
+                android:id="@+id/textTitulo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="SENSORES DE MOVIMIENTO"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="La plataforma Android proporciona varios sensores que te permiten supervisar el movimiento de un dispositivo."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/gravity"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="1. GRAVEDAD: Sensor de tipo hardware o software. Mide en m/s2 la fuerza de gravedad que se aplica a un dispositivo en los tres ejes físicos (x, y, z). Se usa habitualmente para la detección de movimiento (agitación, inclinación, etc.)."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/accelerometer"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/classic_rose"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="2. ACELERÓMETRO: Sensor de tipo hardware. Mide en m/s2 la fuerza de aceleración que se aplica a un dispositivo en los tres ejes físicos (x, y, z), incluida la fuerza de gravedad. Se usa habitualmente para la detección de movimiento (agitación, inclinación, etc.)."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/rotation"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/queen_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="3. ROTACIÓN: Sensor de tipo software o hardware. Mide la orientación de un dispositivo mediante los tres elementos del vector de rotación del dispositivo. Se usa habitualmente para la detección de movimiento y detección de rotación."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/motion"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cameo_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="4. MOVIMIENTO SIGNIFICATIVO: Sensor que activa un evento cada vez que detecta un movimiento significativo; luego, se desactiva automáticamente. Se usa habitualmente para detectar movimientos que pueden llevar a un cambio en la ubicación del usuario (caminar, andar en bicicleta, etc.)."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/stepcounter"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/queen_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="5. CONTADOR DE PASOS: Sensor que muestra la cantidad de pasos que dio el usuario desde el ultimo reinicio mientras estaba activado el sensor."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/stepdetector"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/queen_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="6. DETECTOR DE PASOS: Sensor que activa un evento cada vez que el usuario da un paso."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

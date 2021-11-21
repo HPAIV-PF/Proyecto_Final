@@ -34,26 +34,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new MessageFragment()).commit();
+                    new PresentationFragment()).commit();
 
-            navigationView.setCheckedItem(R.id.nav_message);
+            navigationView.setCheckedItem(R.id.nav_presentation);
         }
     }
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.nav_message:
+            case R.id.nav_presentation:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new MessageFragment()).commit();
+                        new PresentationFragment()).commit();
                 break;
-            case R.id.nav_chat:
+            case R.id.nav_entorno:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ChatFragment()).commit();
+                        new EntornoFragment()).commit();
                 break;
-            case R.id.nav_profile:
+            case R.id.nav_posicion:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new ProfileFragment()).commit();
+                        new PositionFragment()).commit();
+                break;
+            case R.id.nav_movimiento:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new MovementFragment()).commit();
                 break;
             case R.id.nav_share:
                 Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();

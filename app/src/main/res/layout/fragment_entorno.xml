@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+
+            <TextView
+                android:id="@+id/textTitulo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="SENSORES DE ENTORNO"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/textDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="La plataforma de Android proporciona cuatro sensores que permiten supervisar varias propiedades del entorno."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/textDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="Los cuatro sensores de entorno están basados en hardware y están disponibles solo si un fabricante de dispositivos los incorporó en el dispositivo."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/light"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="1. LUZ: Sensor de tipo hardware que mide el nivel de luz ambiental (iluminación) en lx. Se usa habitualmente para el control del brillo de la pantalla."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/temp"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/classic_rose"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="2. TEMPERATURA AMBIENTE: Sensor de tipo hardware que mide la temperatura ambiente de la habitación den grados Celsius (°C). Se usa habitualmente para la supervisión de la temperatura del aire. "
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/pressure"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/queen_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="3. PRESIÓN: Sensor de tipo hardware que mide la presión del aire del ambiente en hPa o mbar. Se usa habitualmente para supervisar los cambios de la presión del aire. "
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/humidity"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cameo_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="4. HUMEDAD: Sensor de tipo hardware que mide en valor de porcentaje (%) la humedad relativa del ambiente. Se usa habitualmente para supervisar el punto de condensación, la humedad absoluta y la humedad relativa. "
+                android:textColor="#000000"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
