@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_pink">#FFEFD5</color>
+    <color name="piggy_pink">#fddde6</color>
+    <color name="classic_rose">#fbcce7</color>
+    <color name="queen_pink">#e8ccd7</color>
+    <color name="cameo_pink">#efbbcc</color>
+    <color name="pink_pearl">#e7accf</color>
+    <color name="misty_rose">#ffe4e1</color>
+    <color name="melon">#fdbcb4</color>
+    <color name="pastel_pink">#dea5a4</color>
+    <color name="pale_pink">#fadadd</color>
+    <color name="shampoo">#ffcff1</color>
 </resources>
