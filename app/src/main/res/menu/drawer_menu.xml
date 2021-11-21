@@ -25,13 +25,17 @@
 
     <item android:title="PROBAR SENSORES">
         <menu>
-            <item android:id="@+id/nav_share"
-                android:icon="@drawable/ic_luz"
-                android:title="SENSOR DE LUZ" />
-            <item android:id="@+id/nav_send"
-                android:icon="@drawable/ic_grav"
-                android:title="SENSOR DE GRAVEDAD" />
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_luz"
+                    android:icon="@drawable/ic_luz"
+                    android:title="SENSOR DE LUZ" />
+                <item android:id="@+id/nav_grav"
+                    android:icon="@drawable/ic_grav"
+                    android:title="SENSOR DE GRAVEDAD" />
+            </group>
         </menu>
     </item>
+
+
 
 </menu>
