@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_green_light">
+    android:background="@color/light_pink">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Position Fragment"
-        android:textSize="30sp"
-        android:layout_centerInParent="true"/>
+    <ScrollView
+        android:id="@+id/ScrollView13"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
+
+            <TextView
+                android:id="@+id/txtView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="SENSORES DE POSICIÓN"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txtView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="La plataforma Android proporciona dos sensores que te permiten determinar la posición de un dispositivo: el sensor de campos geomagnéticos y el acelerómetro. También se encuentra un sensor de proximidad. Los sensores de posición son útiles para determinar la posición física de un dispositivo en el marco de referencia mundial."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitStart"
+                app:srcCompat="@drawable/magneticfield" />
+
+            <TextView
+                android:id="@+id/txtView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/piggy_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="1. CAMPO GEOMAGNÉTICOS: "
+                android:textColor="#000000"
+                android:textSize="21sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

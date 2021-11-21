@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto_Final/app/src/main/res/layout/fragment_gravity.xml" value="0.22" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto_Final/app/src/main/res/layout/fragment_light.xml" value="0.22871376811594202" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto_Final/app/src/main/res/layout/fragment_movement.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Proyecto_Final/app/src/main/res/layout/fragment_position.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ProyectoFinal/app/src/main/res/drawable/divider.xml" value="0.2074074074074074" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ProyectoFinal/app/src/main/res/drawable/ic_send.xml" value="0.1" />
         <entry key="..\:/Users/maria/AndroidStudioProjects/ProyectoFinal/app/src/main/res/layout/activity_main.xml" value="0.1" />
