@@ -9,15 +9,15 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="414dp"
-        android:layout_height="557dp"
-        android:layout_marginTop="92dp"
+        android:layout_width="400dp"
+        android:layout_height="556dp"
+        android:layout_marginTop="84dp"
         android:divider="@drawable/divider"
         android:gravity="center"
         android:orientation="vertical"
         android:showDividers="middle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 

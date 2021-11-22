@@ -18,7 +18,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class GravityFragment extends Fragment implements SensorEventListener {
-    //Programación del sensor de gravedad
+
     private Button gravBtn;
     private TextView gravValor;
     private TextView valueFields;
