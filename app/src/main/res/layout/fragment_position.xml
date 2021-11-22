@@ -49,9 +49,9 @@
             <ImageView
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitStart"
-                app:srcCompat="@drawable/magneticfield" />
+                android:layout_height="310dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/campogeo" />
 
             <TextView
                 android:id="@+id/txtView3"
@@ -59,7 +59,39 @@
                 android:layout_height="wrap_content"
                 android:background="@color/piggy_pink"
                 android:fontFamily="@font/roboto_condensed_bold"
-                android:text="1. CAMPO GEOMAGNÉTICOS: "
+                android:text="1. CAMPOS GEOMAGNÉTICOS: El sensor de campo geomagnético se basa en hardware y permite supervisar los cambios que se producen en el campo magnético de la Tierra."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/aceleracion" />
+
+            <TextView
+                android:id="@+id/txtView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/classic_rose"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="2. ACELERÓMETRO: Sensor de tipo hardware. Para determinar la orientación de un dispositivo, se puede usar las lecturas del acelerómetro del dispositivo y el sensor de campos geomagnéticos. Mide la aceleración que se aplica a un dispositivo durante un evento de sensor."
+                android:textColor="#000000"
+                android:textSize="21sp" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                app:srcCompat="@drawable/dist" />
+
+            <TextView
+                android:id="@+id/txtView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/queen_pink"
+                android:fontFamily="@font/roboto_condensed_bold"
+                android:text="3. PROXIMIDAD: Sensor de tipo  hardware. Permite determinar a qué distancia se encuentra un objeto respecto de un dispositivo. La mayoría de los sensores de proximidad informan la distancia absoluta en centímetros, pero algunos informan solo valores de cercanía y lejanía."
                 android:textColor="#000000"
                 android:textSize="21sp" />
 
