@@ -3,21 +3,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <item android:title="INFORMACION">
+    <item android:id="@+id/nav_presentation"
+        android:icon="@drawable/ic_profile"
+        android:title="PRESENTACION" />
+
+    <item android:title="INFORMACION SENSORES">
         <menu>
             <group android:checkableBehavior="single">
-                <item android:id="@+id/nav_presentation"
-                    android:icon="@drawable/ic_profile"
-                    android:title="PRESENTACION" />
                 <item android:id="@+id/nav_entorno"
                     android:icon="@drawable/ic_entorno"
-                    android:title="SENSORES DE ENTORNO" />
+                    android:title="DE ENTORNO" />
                 <item android:id="@+id/nav_posicion"
                     android:icon="@drawable/ic_position"
-                    android:title="SENSORES DE POSICION" />
+                    android:title="DE POSICION" />
                 <item android:id="@+id/nav_movimiento"
                     android:icon="@drawable/ic_move"
-                    android:title="SENSORES DE MOVIMIENTO" />
+                    android:title="DE MOVIMIENTO" />
             </group>
         </menu>
     </item>

@@ -50,7 +50,7 @@
                 android:id="@+id/img4"
                 android:layout_width="match_parent"
                 android:layout_height="310dp"
-                android:scaleType="centerInside"
+                android:scaleType="fitXY"
                 app:srcCompat="@drawable/campogeo" />
 
             <TextView
@@ -83,7 +83,8 @@
                 android:id="@+id/img9"
                 android:layout_width="match_parent"
                 android:layout_height="310dp"
-                app:srcCompat="@drawable/dist" />
+                app:srcCompat="@drawable/dist"
+                android:scaleType="fitXY"/>
 
             <TextView
                 android:id="@+id/txtView5"
