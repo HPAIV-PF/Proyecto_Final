@@ -23,7 +23,6 @@ public class GravityFragment extends Fragment implements SensorEventListener {
     private TextView gravValor;
     private TextView valueFields;
     private SensorManager senseManage;
-    private final int GRAVITY=0;
     private Sensor envSense;
     @Nullable
     @Override
@@ -41,7 +40,7 @@ public class GravityFragment extends Fragment implements SensorEventListener {
                 envSense = senseManage.getDefaultSensor(Sensor.TYPE_GRAVITY);
                 if(envSense==null)
                     Toast.makeText(getActivity(),
-                            "Sorry - your device doesn't have a gravity sensor!",
+                            "Lo siento, tu dispositivo no tiene sensor de gravedad.",
                             Toast.LENGTH_SHORT).show();
                 else
                     senseManage.registerListener(GravityFragment.this, envSense, SensorManager.SENSOR_DELAY_NORMAL);
@@ -69,16 +68,16 @@ public class GravityFragment extends Fragment implements SensorEventListener {
         String accuracyMsg = "";
         switch(accuracy){
             case SensorManager.SENSOR_STATUS_ACCURACY_HIGH:
-                accuracyMsg="Sensor has high accuracy";
+                accuracyMsg="El sensor tiene alta precisión.";
                 break;
             case SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM:
-                accuracyMsg="Sensor has medium accuracy";
+                accuracyMsg="El sensor tiene una precisión media.";
                 break;
             case SensorManager.SENSOR_STATUS_ACCURACY_LOW:
-                accuracyMsg="Sensor has low accuracy";
+                accuracyMsg="El sensor tiene baja precisión.";
                 break;
             case SensorManager.SENSOR_STATUS_UNRELIABLE:
-                accuracyMsg="Sensor has unreliable accuracy";
+                accuracyMsg="El sensor tiene una precisión poco confiable.";
                 break;
             default:
                 break;

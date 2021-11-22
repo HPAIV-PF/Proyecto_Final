@@ -22,10 +22,6 @@ public class LightFragment extends Fragment implements SensorEventListener {
     private TextView lightValue;
     private TextView valueFields;
     private SensorManager senseManage;
-    private final int GRAVITY=0;
-    private final int LIGHT=1;
-    private final int PRESSURE=2;
-    private final int HUMIDITY=3;
     private Sensor envSense;
     @Nullable
     @Override
@@ -43,7 +39,7 @@ public class LightFragment extends Fragment implements SensorEventListener {
                 envSense = senseManage.getDefaultSensor(Sensor.TYPE_LIGHT);
                 if(envSense==null)
                     Toast.makeText(getActivity(),
-                            "Sorry - your device doesn't have a light sensor!",
+                            "Lo siento, tu dispositivo no tiene sensor de luz.",
                             Toast.LENGTH_SHORT).show();
                 else
                     senseManage.registerListener(LightFragment.this, envSense, SensorManager.SENSOR_DELAY_NORMAL);
@@ -59,7 +55,7 @@ public class LightFragment extends Fragment implements SensorEventListener {
         TextView currValue = lightValue;
         String envInfo="";
         int currType=event.sensor.getType();
-        envInfo=sensorValue+" SI lux units";
+        envInfo=sensorValue+" unidades lux";
         currValue=valueFields;
         currValue.setText(envInfo);
         envSense=null;
@@ -71,16 +67,16 @@ public class LightFragment extends Fragment implements SensorEventListener {
         String accuracyMsg = "";
         switch(accuracy){
             case SensorManager.SENSOR_STATUS_ACCURACY_HIGH:
-                accuracyMsg="Sensor has high accuracy";
+                accuracyMsg="El sensor tiene alta precisión.";
                 break;
             case SensorManager.SENSOR_STATUS_ACCURACY_MEDIUM:
-                accuracyMsg="Sensor has medium accuracy";
+                accuracyMsg="El sensor tiene una precisión media.";
                 break;
             case SensorManager.SENSOR_STATUS_ACCURACY_LOW:
-                accuracyMsg="Sensor has low accuracy";
+                accuracyMsg="El sensor tiene baja precisión.";
                 break;
             case SensorManager.SENSOR_STATUS_UNRELIABLE:
-                accuracyMsg="Sensor has unreliable accuracy";
+                accuracyMsg="El sensor tiene una precisión poco confiable.";
                 break;
             default:
                 break;
